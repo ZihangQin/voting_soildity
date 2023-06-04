@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Voting</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div id="ticketForm" class="hidden">
+        <h2 class="sub-heading">Enter quantity:</h2>
+        <div class="form-group">
+            <input type="number" id="ticketQty" min="1" max="10">
+        </div>
+        <br>
+        <br>
+        <div class="form-group">
+            <form id="but_ticket">
+                <button type="submit" class="btn btn-primary1">OK</button>
+            </form>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <form>
+                <button type="submit" class="btn btn-secondary" onclick="hideTicketForm()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+
+    <form id="add_moderator">
+        <div class="btn-container">
+            <button class="btn-style" type="submit">Application for the role of moderator</button>
+        </div>
+    </form>
+    <div class="container">
+        <h1 class="heading">Voting DApp For Solidity</h1>
+
+
+        <div class="btn-container1">
+            <button class="btn-style1" type="button" onclick="showTicketForm()">Buy tickets</button>
+        </div>
+
+
+
+        <form id="voting_form">
+            <h2 class="sub-heading">Vote for Candidate:</h2>
+            <div class="form-group">
+                <select id="candidateList" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Vote</button>
+            </div>
+        </form>
+        <hr>
+        <div class="candidate-list">
+            <h2 class="sub-heading">Candidate List:</h2>
+            <ul id="candidateUl"></ul>
+        </div>
+        <hr>
+        <div class="candidate-list">
+            <form id="add_form">
+                <h2 class="sub-heading">Add Candidate:</h2>
+                <div class="form-group">
+                    <input type="text" id="add-heading">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./web3.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

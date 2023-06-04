@@ -1,0 +1,177 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EFF7F6;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+/* 容器样式 */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #CCCCCC;
+}
+
+/* 标题样式 */
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2D3E50;
+}
+
+.sub-heading {
+    margin-top: 30px;
+    color: #2C3E50;
+    font-weight: bold;
+}
+
+/* 表单样式 */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-style {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ECF0F1;
+    font-size: 16px;
+    color: #2C3E50;
+}
+
+button[type="submit"],
+.btn-style {
+    background-color: #2980B9;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+
+button[type="submit"]:hover,
+.btn-style:hover {
+    background-color: #154360;
+}
+
+/* 候选人列表样式 */
+.candidate-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.candidate-list li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #2C3E50;
+}
+
+
+input[type="text"]#add-heading {
+    width: 98%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f5f5f5;
+    font-size: 16px;
+}
+
+button[type="submit"],
+.btn-style {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* constructor() {
+     string[] memory names = new string[](3);
+    names[0] = "Alice";
+    names[1] = "Bob";
+    names[2] = "Charlie";
+
+    string[] memory names_second = new string[](3);
+    names_second[0] = "Charlie";
+    names_second[1] = "David";
+    names_second[2] = "Eve";
+
+    // 添加第一个提案
+    addProposal("First Proposal", names);
+
+    // 添加第二个提案
+    addProposal("Second Proposal", names_second);
+  } */
+
+.btn-container1 {
+    text-align: center;
+    /* 居中对齐 */
+}
+
+.container .btn-style1 {
+    background-color: blue;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ticketForm {
+    text-align: center;
+    /* 居中对齐 */
+    background-color: rgba(209, 238, 236, 0.8);
+    border: 1px solid #154360;
+    display: none;
+    position: fixed;
+    height: 400px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ticketForm button[type="submit"] {
+    margin-left: 30%;
+    width: 40%;
+}
+
+#ticketQty {
+    width: 30%;
+}
